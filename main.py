@@ -17,6 +17,7 @@ def main(phrase, missing_notation='?', verbose=True):
         raise Exception('Multiple missing words is not supported yet.')
 
     pos_missing_word = phrase_list.index(missing_notation)
+    _ = 0
     for guess_word in mnemonic_dictionary:
         phrase_list[pos_missing_word] = guess_word
         phrase_printable = ' '.join(phrase_list)
@@ -27,17 +28,16 @@ def main(phrase, missing_notation='?', verbose=True):
                 # print('\nFound correct phrase:')
                 print('\n', phrase_printable)
                 # break
+                _+=1
                 continue
             else:
                 if verbose:
                     print('\nNot found!')
-    print()
+    print('\nDONE! You have',_,'mnemonics to try!')
 
 
 if __name__ == '__main__':
-    # phrase = 'school antique detect emotion pepper weasel topic arm shoulder ? chapter deny' # an example
-    # phrase = 'install fresh conduct boss coyote tragic erase follow fence talent hint dish' # an example
-    # phrase = 'install fresh conduct boss coyote tragic erase follow fence talent ? dish' # an example
+
     phrase = 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon ?' # an example
 
     main(phrase)
