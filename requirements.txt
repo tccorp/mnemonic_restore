@@ -1,0 +1,5 @@
+bech32==1.2.0
+bip32utils==0.3.post4
+ecdsa==0.16.1
+mnemonic==0.19
+pycryptodome==3.20.0
