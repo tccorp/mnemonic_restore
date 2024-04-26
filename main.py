@@ -31,11 +31,13 @@ def main(phrase, missing_notation='?', verbose=True):
             else:
                 if verbose:
                     print('\nNot found!')
+    print()
 
 
 if __name__ == '__main__':
     # phrase = 'school antique detect emotion pepper weasel topic arm shoulder ? chapter deny' # an example
     # phrase = 'install fresh conduct boss coyote tragic erase follow fence talent hint dish' # an example
-    phrase = 'install fresh conduct boss coyote tragic erase follow fence talent ? dish' # an example
+    # phrase = 'install fresh conduct boss coyote tragic erase follow fence talent ? dish' # an example
+    phrase = 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon ?' # an example
 
     main(phrase)
