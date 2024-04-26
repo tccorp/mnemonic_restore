@@ -17,5 +17,5 @@ def check_mnemonic_validity(words):
 
 if __name__ == '__main__':
 
-  words = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+  words = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon wrap"
   print(check_mnemonic_validity(words))
